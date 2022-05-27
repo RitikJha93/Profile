@@ -1,0 +1,52 @@
+.portfolio{
+    min-height: 100vh;
+    background: linear-gradient(to right,#b84d06,#9f4e17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.details{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px;
+}
+.details .photo{
+    max-width: 180px;
+    border-radius: 50%;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes heading{
+    0% {top: -400px;}
+    100% {top: 0;}
+  }
+.text{
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes content{
+    0% {left: -1000px;}
+    100% {left: 0px;}
+}
+.text p{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 4px 0;
+}
+.text .wave{
+    max-width: 50px;
+}
+.social{
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
