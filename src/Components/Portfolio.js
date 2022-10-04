@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../images/img.jpg'
+import img from '../images/profile_pic.jfif'
 import hand from '../images/hand-wave.png'
 import linkedin from '../images/linkedin.png'
 
