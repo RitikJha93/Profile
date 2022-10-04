@@ -1,27 +1,34 @@
-import React from 'react'
-import img from '../images/profile_pic.jfif'
-import hand from '../images/hand-wave.png'
-import linkedin from '../images/linkedin.png'
+import React from "react";
+import img from "../images/profile_pic.jfif";
+import linkedin from "../images/linkedin.png";
+import github from "../images/github-logo.png";
 
-import './Portfolio.css'
+import "./Portfolio.css";
 const Portfolio = () => {
   return (
-    <div className='portfolio'>
-        <div className="details">
-            <img className='photo' src={img} alt="" />
-            <div className="text">
-                <h1><img className='wave' src={hand} alt="" />,Hii</h1>
-                <h2>Myself Ritik Jha</h2>
-                <p>I'm First year undergrad at Indian Institute of Information Technology Ranchi.</p>
-                <p>I am a Full Stack Web Developer and very keen about learning new technologies in the field of web.</p>
-            </div>
-            <div className='social'>
-              <a href="https://www.linkedin.com/in/ritik-jha-855363220/" target="_blank"><img src={linkedin} alt=""  /></a>
-            </div>
-        </div>
-      
-    </div>
-  )
-}
+    <>
+      <div className="card-container">
+        <img className="round" src={img} alt="user" />
+        <h3>Ritik Jha</h3>
+        <p>Student at IIIT Ranchi <br /> Full Stack Web Developer</p>
 
-export default Portfolio
+        <div className="skills">
+          <a href="https://www.linkedin.com/in/ritik-jha-855363220/" target='_blank'>
+            <div className="linkedin">
+              <img src={linkedin} alt="" />
+              <p>Linkedin</p>
+            </div>
+          </a>
+          <a href="https://github.com/RitikJha93/" target='_blank'>
+            <div className="linkedin">
+              <img src={github} alt="" />
+              <p>Github</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Portfolio;
